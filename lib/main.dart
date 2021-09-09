@@ -26,10 +26,14 @@ class ModelWidget extends StatelessWidget {
       aspectRatio: 1,
       child: Container(
           color: generateRandomColor(),
-          padding: EdgeInsets.symmetric(vertical: 30),
-          child: Text(
-            model.num.toString(),
-            textAlign: TextAlign.center,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                model.num.toString(),
+                textAlign: TextAlign.center,
+              ),
+            ],
           )),
     );
   }
@@ -67,7 +71,7 @@ class TabBarDemo extends StatelessWidget {
                 Tab(icon: Text("solution (builder)")),
               ],
             ),
-            title: const Text('Tabs Demo'),
+            title: const Text('staggered_grid - centering tiles'),
           ),
           body: Padding(
             padding: const EdgeInsets.all(8.0),
