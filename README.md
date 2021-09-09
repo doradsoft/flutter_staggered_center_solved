@@ -3,7 +3,7 @@
 In this repository there is a solution for the need to align last tiles in
 a `flutter_staggered_grid` in the center
 
-*Problem*
+##Problem
 ![Problem](./blob/problem.png)
-*Solution*
+##Solution
 ![Problem](./blob/solution.png)
